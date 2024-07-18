@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Sighting - ICF Rugera</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <img src="./images/logo.jpg" alt="ICF Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="report-sighting.html">Report Sighting</a></li>
+            <li><a href="report-danger.html">Report Danger</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Report Sighting</h1>
+    </header>
+
+    <main>
+        <section>
+            <!-- <h2>Report a Crane Sighting</h2> -->
+            <p>Help us monitor and protect cranes by reporting sightings of these majestic birds. Your observations contribute to our efforts in understanding crane populations and their habitats, aiding in their conservation worldwide.</p>
+            <form id="sightingForm" action="submit-sighting.php" method="POST">
+              <fieldset>
+                <div> <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required></div>
+                <div><label for="date">Date:</label>
+                <input type="date" id="date" name="date" required></div>
+                <div><label for="details">Details:</label>
+                <textarea id="details" name="details" rows="4" required></textarea></div>
+                <div>
+                  <label>File</label>
+                  <input type="file">
+                </div>
+              </fieldset>
+               
+
+                
+
+                
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 International Crane Foundation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
